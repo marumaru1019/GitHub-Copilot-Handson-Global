@@ -32,14 +32,14 @@ GitHub Copilot をこれから使い始める/使い始めたばかりの方を�
 - GitHub アカウント
 - GitHub Copilot Business の利用ライセンス
 - Visual Studio Code
+- node20 or later
+- python 3.9 or later
 
 ## 環境の準備
 
-GitHub Copilot は特に利用できる言語の制限はありませんが、今回のワークショップでは「javascript」/「python」を扱います。
-
+今回は Visual Studio Code（VSCode）を用いてワークショップを実施します。GitHub Copilot 拡張機能のインストールが必要になりますので、[こちら](https://code.visualstudio.com/docs/copilot/setup)のリンクを参考に拡張機能のインストールを実施してください。
 
 ---
+# Exercise 0
+## まずは GitHub Copilot を触ってみる
 
-## Second section
-
-Content for second section
