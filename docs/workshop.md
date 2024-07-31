@@ -40,6 +40,7 @@ GitHub Copilot をこれから使い始める/使い始めたばかりの方を�
 今回は Visual Studio Code（VSCode）を用いてワークショップを実施します。GitHub Copilot 拡張機能のインストールが必要になりますので、[こちら](https://code.visualstudio.com/docs/copilot/setup)のリンクを参考に拡張機能のインストールを実施してください。
 
 ---
+
 # Exercise 0
 ## まずは GitHub Copilot を触ってみる
 
