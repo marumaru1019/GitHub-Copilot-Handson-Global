@@ -44,3 +44,10 @@ GitHub Copilot をこれから使い始める/使い始めたばかりの方を�
 # Exercise 0
 ## まずは GitHub Copilot を触ってみる
 
+### ワークショップ用リポジトリのダウンロード
+まずはこちらにある[ワークショップ用のリポジトリ](https://github.com/tenjoufire/ghcbws)からワークショップで利用するソースコード類をダウンロードしてください。
+
+GitHub のページから「Download ZIP」を選択し、ローカルの環境にソースコードをダウンロードしてください。その後、ZIPファイルを任意のディレクトリに展開してください。
+![ソースコードダウンロード](/workspaces/GitHub-Copilot-Workshop/docs/assets/ex0_01.png)
+
+GitHub Copilot の拡張機能がインストールされた VS Code を開き、先ほど展開したフォルダを VS Code で開いてください。
