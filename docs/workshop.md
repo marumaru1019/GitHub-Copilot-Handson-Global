@@ -32,8 +32,10 @@ GitHub Copilot をこれから使い始める/使い始めたばかりの方を�
 - GitHub アカウント
 - GitHub Copilot Business の利用ライセンス
 - Visual Studio Code
+- Git クライアント（Windows 環境の場合は Git for Windows 等）
 - node20 or later
 - python 3.9 or later
+- (そのほかお好きな言語の開発環境)
 
 ## 環境の準備
 
@@ -41,13 +43,19 @@ GitHub Copilot をこれから使い始める/使い始めたばかりの方を�
 
 ---
 
-# Exercise 0
+# Exercise 1
 ## まずは GitHub Copilot を触ってみる
 
 ### ワークショップ用リポジトリのダウンロード
 まずはこちらにある[ワークショップ用のリポジトリ](https://github.com/tenjoufire/ghcbws)からワークショップで利用するソースコード類をダウンロードしてください。
 
 GitHub のページから「Download ZIP」を選択し、ローカルの環境にソースコードをダウンロードしてください。その後、ZIPファイルを任意のディレクトリに展開してください。
-![ソースコードダウンロード](/workspaces/GitHub-Copilot-Workshop/docs/assets/ex0_01.png)
+![ソースコードダウンロード](./assets/ex0_01.png)
 
 GitHub Copilot の拡張機能がインストールされた VS Code を開き、先ほど展開したフォルダを VS Code で開いてください。
+
+
+---
+
+# Exercise 2
+## GitHub Copilot を利用し、簡単なアプリケーションを作ってみる
