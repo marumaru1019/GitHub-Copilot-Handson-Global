@@ -81,11 +81,62 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 ### ソースコード生成を体験してみよう
 
 1. はじめに VS Code の Explorer の中から、「Exercise1」ディレクトリを開き、「FirstCopilot.py」をダブルクリックしてください。
-2. 画面右側にソースコードの中身が表示されたら、6行目の最後にカーソルを持っていき「Enter」キーを押してみてください。
+2. 画面右側にソースコードの中身が表示されたら、6行目の最後にカーソルを持っていき`Enter`キーを押してみてください。
+3. 薄いグレーの色で GitHub Copilot からの補完が確認出来たら、`tab`キーを押して GitHub Copilot からの提案を受け入れてください。
+<div class="info" data-title="Note">
 
+> GitHub Copilot の補完が出ない場合は、VS Code ウィンドウの右下の Copilot アイコンの状態を確認してみてください。「Status:Ready」となっている場合は、補完が出るまで少し待ってみてください。
+</div>
+
+<details>
+<summary>提案の例</summary>
+
+![提案の例](./assets/ex0_04.png)
+</details>
+
+<div class="task" data-title="追加課題">
+
+> このプログラムは控除が考慮されていませんが、所得税が一律で20%かかることを考慮した給与計算のプログラムを提案してもらうにはどうすればよいか考えてみてください。
+
+</div>
+
+### プログラムを完成させ実行してみよう
+
+1. 引き続き、`calc_salary`関数の続きを GitHub Copilot を使いながら実装していきましょう。
+2. 今回は、標準入力から一日の労働時間を整数で入力し、標準出力で給料を出力するように実装してみてください。
+
+<div class="tip" data-title="tip">
+
+> GitHub Copilot から思った通りの提案が出ない場合は、何回かやり直してみたり、やりたいことをコメントでかいてみたり、実装の最初の部分（変数宣言など）を書いてみたりしてください。
+</div>
+
+<div class="info" data-title="note">
+
+> GitHub Copilot の提案は同じものである場合もあれば異なる提案になる場合もあります。これは GitHub Copilot の裏側で生成 AI（Open AI のモデル）を利用しているためです。
+</div>
+
+<details>
+<summary>実装の例</summary>
+
+![実装の例](./assets/ex0_05.png)
+</details>
+
+
+3. 実装が完了したら、`Ctrl + S`でファイルを保存し、`Ctrl + Shift + @`で VS Code 上のターミナルを開いてください。
+4. ターミナル上で `cd Exercise1`と入力し、ディレクトリを移動してください。
+5. ターミナル上で `python3 FirstCopilot.py` と入力し、実装したプログラムを実行してください。
+
+<div class="info" data-title="note">
+
+> プログラムの実行に失敗した場合は、どこがおかしいのかを含めて GitHub Copilot に聞いて解決を図ってみてください。
+</div>
+
+## GitHub Copilot Chat を触ってみる
+一度先ほど実装した python のプログラムは閉じ、同じディレクトリの中にある `TryCopilotChat.java` を開いてください。
 
 ---
 
 # Exercise 2
 
 ## GitHub Copilot を利用し、簡単なアプリケーションを作ってみる
+
