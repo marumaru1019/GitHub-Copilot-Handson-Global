@@ -83,6 +83,7 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 1. はじめに VS Code の Explorer の中から、「Exercise1」ディレクトリを開き、「FirstCopilot.py」をダブルクリックしてください。
 2. 画面右側にソースコードの中身が表示されたら、6行目の最後にカーソルを持っていき`Enter`キーを押してみてください。
 3. 薄いグレーの色で GitHub Copilot からの補完が確認出来たら、`tab`キーを押して GitHub Copilot からの提案を受け入れてください。
+
 <div class="info" data-title="Note">
 
 > GitHub Copilot の補完が出ない場合は、VS Code ウィンドウの右下の Copilot アイコンの状態を確認してみてください。「Status:Ready」となっている場合は、補完が出るまで少し待ってみてください。
