@@ -25,7 +25,7 @@ tags: GitHub Copilot, javascript, python          # Required. Tags for filtering
 
 # GitHub Copilot Workshop (初級編)
 
-GitHub Copilot をこれから使い始める/使い始めたばかりの方を対象としたワークショップです。
+GitHub Copilot をこれから使い始める/使い始めたばかりの方を対象としたワークショップです。GitHub Copilot を対象としたワークショップであるため、必ずしも本ガイドの通りの結果が返ってくるとは限りませんが、GitHub Copilot の使い方や機能について理解を深める最初の一歩を踏み出すためのワークショップとなっています。
 
 ## 事前準備
 
@@ -134,9 +134,68 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 ## GitHub Copilot Chat を触ってみる
 一度先ほど実装した python のプログラムは閉じ、同じディレクトリの中にある `TryCopilotChat.java` を開いてください。
 
+<details>
+<summary>ウィンドウの閉じ方</summary>
+
+![ウィンドウの閉じ方](./assets/ex0_06.png)
+</details>
+
+1. VS Code の左側のアイコンから GitHub Copilot Chat を選択し、チャットウィンドウを開いてください。
+![チャットウィンドウの開き方](./assets/ex0_07.png)
+
+2. チャットウィンドウの中で、`@workspace /explain`と入力してみてください。GitHub Copilot がどのような機能を持っているかを説明してくれます。
+
+3. もし回答が英語で表示された場合は、`@workspace /explain 日本語で` と入力してみてください。
+
+<div class="info" data-title="TIP">
+
+> GitHub Copilot の設定で、日本語を既定の言語に変更することも可能です。`Ctrl + ,` で設定画面を開き、`Copilot Chat` の項目から Locale Override の項目を `ja` に変更してください。
+![設定画面](./assets/ex0_08.png)
+
+</div>
+
+<div class="task" data-title="追加課題">
+
+> Locale Override を日本語に変更した場合、Copilot Chat の挙動にどのような違いがあるかを調べてみてください。
+
+</div>
+
+4. GitHub Copilot Chat のウインドウ上部にある `+` ボタンをクリックし、新しいチャットを開いてください。
+5. 新しいチャットにて、「このコードの問題点を教えてください。」と入力してみてください。
+6. GitHub Copilot が提案する問題点を確認し、それに対してどのように対処するかを考えてみてください。
+7. GitHub Copilot Chat のウインドウ上部にある `+` ボタンをクリックし、新しいチャットを開いてください。
+8. また、コード全体ではなく、特定の部分に対して問題点を聞いてみるとどのような提案が出るかを確認するために、`main` メソッド全体をマウスで選択してから、右クリックして「Add Selection to Chat」を選択してみてください。
+![選択](./assets/ex0_09.png)
+9. Chat のテキストウィンドウの上部に `TryCopilotChat.java:5-16` と表示されているので、そのまま「このコードのリファクタリングのアイデアをください」と入力してください。GitHub Copilot が提案するリファクタリングのアイデアを確認し、それに対してどのように対処するかを考えてみてください。
+10. 他の文言でも試してみましょう。「このコードの脆弱性を教えてください」と入力してみるとどのような提案が出るかを確認してみてください。（恐らく、入力のバリデーションが不足していることが指摘されると思います。）
+11. これまでに GitHub Copilot Chat からもらった提案をもとに、コードを修正してみてください。
+<div class="tip" data-title="TIP">
+
+> GitHub Copilot Chat からもらった提案はそのまま、エディタ上に反映させることもできます。コードブロックの上部にある `Apply in Editor` や `Insert at Cursor` をクリックすることで、提案をそのままコードに反映させることができます。GitHub Copilot Chat が提案するコードをすべて信用するのは危険ですが、まずは提案をざっくり受け入れて、そのあとで修正を加えるという使い方も便利です。
+</div>
+
+12. 修正が完了したら、GitHub Copilot Chat で「このコードの各行にコメントをつけてください」と聞いてみてください。GitHub Copilot が各行にコメントをつける提案をしてくれるはずです。
+
+<div class="info" data-title="NOTE">
+
+> 今回はわかりやすさ重視のため、GitHub Copilot Chat のウィンドウを使っていますが、GitHub Copilot Chat は `Ctrl + I` で直接エディタ上で利用することも可能です。また、エディタ上で右クリックして、Copilot 関連のメニューを選択することで、よく利用する機能を簡単に呼び出すことも可能です。
+</div>
+
+<div class="task" data-title="追加課題">
+
+> GitHub Copilot Chat を使って、テストコードのアイデアをもらってみてください。
+
+</div>
+
+<div class="task" data-title="追加課題">
+
+> FirstCopilot.py のプログラムでも GitHub Copilot Chat を用いて、脆弱性の修正やリファクタリングのアイデア、コメントの追加などを試してみてください。
+
+</div>
+
 ---
 
 # Exercise 2
 
-## GitHub Copilot を利用し、簡単なアプリケーションを作ってみる
+## GitHub Copilot を簡単なアプリケーションで利用してみる
 
