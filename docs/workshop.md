@@ -242,7 +242,12 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 
 > GitHub Copilot チャットはサイドバーだけでなく、インラインチャットでも利用可能です。もし GitHub Copilot から提案が出てこない場合は、 `Ctrl + I` でインラインチャットを起動し、やりたいことをチャットに入力してみてください。
 
+<details>
+<summary>提案の例</summary>
+
 ![inline](./assets/ex1_05.png)
+
+</summary>
 
 </div>
 
@@ -303,7 +308,13 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 <div class="tip" data-title="tip">
 
 > GitHub Copilot チャットはサイドバーだけでなく、インラインチャットでも利用可能です。もし GitHub Copilot から提案が出てこない場合は、 `Ctrl + I` でインラインチャットを起動し、やりたいことをチャットに入力してみてください。
+
+<details>
+<summary>インラインチャットの例</summary>
+
 ![inline](./assets/ex1_07.png)
+
+</summary>
 
 </div>
 
