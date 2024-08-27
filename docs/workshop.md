@@ -23,7 +23,7 @@ tags: GitHub Copilot, javascript, python          # Required. Tags for filtering
 #   - Section 2 title
 ---
 
-# GitHub Copilot Workshop (初級編)
+# GitHub Copilot Workshop (実践活用編) 
 
 GitHub Copilot をこれから使い始める/使い始めたばかりの方を対象としたワークショップです。GitHub Copilot を対象としたワークショップであるため、必ずしも本ガイドの通りの結果が返ってくるとは限りませんが、GitHub Copilot の使い方や機能について理解を深める最初の一歩を踏み出すためのワークショップとなっています。
 
