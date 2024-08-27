@@ -414,12 +414,11 @@ GitHub Copilot の拡張機能がインストールされた VS Code を開き�
 
 </div>
 
-### 自然言語から UML の生成を実施してみる
+## 自然言語から UML の生成を実施してみる
 
 <div class="info" data-title="info">
 
 > ここでは、UML の作成に Mermaid 記法を利用します。
-
 > ※ Mermaid=Markdownのようにフロー図を記述するための記法と描画を行うJSライブラリ
 
 
