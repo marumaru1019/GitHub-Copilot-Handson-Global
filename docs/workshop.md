@@ -5,10 +5,6 @@ title: GitHub Copilot Workshop              # Required. Full title of the worksh
 short_title: GH Copilot Workshop                # Optional. Short title displayed in the header
 description: This is a workshop for...  # Required.
 level: beginner                         # Required. Can be 'beginner', 'intermediate' or 'advanced'
-authors:                                # Required. You can add as many authors as needed      
-  - Kaisei Tsujimoto
-contacts:                               # Required. Must match the number of authors
-  - katsujim@microsoft.com
 duration_minutes: 20                    # Required. Estimated duration in minutes
 tags: GitHub Copilot, javascript, python          # Required. Tags for filtering and searching
 #banner_url: assets/banner.jpg           # Optional. Should be a 1280x640px image
@@ -47,7 +43,7 @@ This workshop will be conducted using Visual Studio Code (VSCode), which require
 ## Advance Preparation
 
 ### Download Workshop Repository
-First, download the source code for the workshop from the [Workshop Repository](https://github.com/tenjoufire/ghcbws).
+First, download the source code for the workshop from the [Workshop Repository](https://github.com/marumaru1019/ghcbws-Global).
 There are two ways to download the source code. The recommended method is to use the Git command, but you can also download a Zip file. Please follow either of the steps below.
 
 <details>
@@ -136,22 +132,18 @@ In either case, it's fine if you open the necessary source code as shown below.
 ## Let's Try GitHub Copilot Chat
 Close the Python program you implemented earlier, and open `TryCopilotChat.java` in the same directory.
 
-<details>
-<summary>How to Close a Window</summary>
-
-![How to close a window](./assets/ex0_06.png)
-</details>
-
 1. From the icons on the left side of VS Code, select GitHub Copilot Chat to open the chat window.
 ![How to open the chat window](./assets/ex0_07.png)
 
 2. In the chat window, try typing `@workspace /explain`. GitHub Copilot will explain its features.
 
-3. If the response is displayed in English, try entering `@workspace /explain 日本語で` to get the response in Japanese.
+3. If you want the response to appear in a language other than English, type `@workspace /explain in native language` to see the response in your native language.
+
 
 <div class="info" data-title="Tip">
 
-> It is also possible to change the default language to Japanese in the GitHub Copilot settings. Open the settings screen with `Ctrl + ,`, and under the `Copilot Chat` section, change the Locale Override setting to `ja`.
+> You can also change the default language to your native language in the GitHub Copilot settings. For example, if you want to use Japanese, use `Ctrl + ,` to open the configuration screen, and change the Locale Override setting to `ja` in the Copilot Chat section.
+
 ![Settings screen](./assets/ex0_08.png)
 
 </div>
@@ -371,13 +363,43 @@ From here on, explanations will use Azure AI Studio with GPT-4 as an example, bu
 
 ### Getting Initial Code Ideas from a Screen Screenshot
 
-1. Copy or save the image below.
+1. Try to see if you can create a code by passing an image of the calculator application used in Exercise 2. Copy or save the following image.
 
 ![Screen Layout](./assets/d2clayout.png)
 
 2. Send the image along with the following prompt to the AI chat service. (The image below is an example using Azure AI Studio.)
 
-`Generate React.js code from this screen image. This is a screen for an expense reimbursement system, with a table where you input date, description, account, and amount. The table is scrollable. Also, "Save" and "Submit" function as action buttons, sending the table contents via POST to microservices in the backend.`
+  ```
+  Generate a React.js code to build a calculator application with the following specifications:
+
+  1. **Layout**:
+    - Display a calculator screen at the top.
+    - The calculator background color should be blue, with buttons and the display having a gray background color.
+
+  2. **Display**:
+    - The display should show an initial value of `0`.
+
+  3. **Buttons**:
+    - Number buttons (0–9).
+    - Operator buttons (+, -, ×, ÷, =).
+    - Decimal point button (.).
+    - A "C" button (clear all).
+    - A "CE" button (clear the last entry).
+
+  4. **Functionality**:
+    - When a number button is pressed, the corresponding number is displayed on the screen.
+    - Operator buttons should enable basic arithmetic operations.
+    - The "=" button should calculate and display the result.
+    - The "C" button should reset all inputs.
+    - The "CE" button should delete the last entry.
+
+  5. **Styling**:
+    - Match the design to the attached calculator image.
+
+  6. **React Component Design**:
+    - The calculator should be built as a single parent component.
+    - Buttons should be designed as reusable child components.
+  ```
 
 ![AI Studio Example](./assets/ex2_02.png)
 
@@ -408,7 +430,7 @@ From here on, explanations will use Azure AI Studio with GPT-4 as an example, bu
 
 </details>
 
-6. If the behavior or layout is not as intended, implement the code while effectively utilizing GitHub Copilot and AI chat.
+6. If the behavior or layout is not what you intended, please implement the code while making good use of GitHub Copilot and AI Chat. In fact, in this case, you can see that the button placement and layout are broken. It is difficult to generate a program as expected with only initial instructions, so please use Chat to give instructions many times to get closer to your ideal application.
 
 <div class="task" data-title="Additional Task">
 
@@ -427,7 +449,8 @@ From here on, explanations will use Azure AI Studio with GPT-4 as an example, bu
 
 1. Try sending the following text to the AI chat:
 
-`Create a sequence diagram in Mermaid notation based on the following process description. The definitions of the lifelines are as follows:
+```
+Create a sequence diagram in Mermaid notation based on the following process description. The definitions of the lifelines are as follows:
 - User who inputs into the system
 - Interface that receives user input
 - Business logic that processes requests from the interface
@@ -443,16 +466,30 @@ If the expense checks in the business logic complete successfully, the business 
 The database object that was requested to save the expenses saves the expenses and returns the result to the business logic.
 The business logic that received the save result from the database object returns success or failure to the interface.
 The interface returns the save result to the user.
-`
+```
 
 2. If you receive text in Mermaid notation, access the Mermaid [Live Editor](https://mermaid.live/), and create a UML diagram. If there is sample text already, delete all of it before inputting the text you got from the AI.
 
 ![Mermaid Live Editor](./assets/ex2_05.png)
 
-<details>
-<summary>Example</summary>
+## Explain what's in the code
+1. Open the "Exercise3" directory and double-click on "bank_account.py". This code simulates a bank account and is used for managing balances in multiple currencies and calculating exchange rates.
 
-![Mermaid Diagram Example](./assets/ex2_04.png)
+2. Open GitHub Copilot Chat and enter `#file:bank_account.py Provide a detailed description of the code in English. Explain the function of each method and the purpose of the class as a whole.`
 
-</details>
+<div class="info" data-title="Note">
 
+> By entering `#file:filename`, you can reference files in GitHub Copilot within VSCode. For other shortcut keys, you can check by entering `/help`.
+![Short Cut](./assets/ex2_08.png)
+
+</div>
+
+3. Once you receive the result, verify whether the code explanation is provided at an appropriate level of detail. If further explanation is needed, ask for more details again.
+![GitHub Copilot Chat Explain Code](./assets/ex2_06.png)
+
+<div class="tip" data-title="Tip">
+
+> Even if the processing is already explained in comments, there may be cases where you cannot understand the content because it is in a different language from your native language. In such cases, you can launch inline chat with `Ctrl + I` and issue instructions such as `Please translate all commented out sections into native language.` This will convert only the commented-out sections into your native language all at once (the example shows conversion to English).
+![Inline Chat Convert Japanese](./assets/ex2_07.png)
+
+</div>
